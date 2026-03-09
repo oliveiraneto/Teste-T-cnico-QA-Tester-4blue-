@@ -286,7 +286,7 @@ Dados sensíveis devem ser protegidos durante a comunicação.
 Severidade: Alta
 Prioridade: Alta
 
-<span style="color:red"> Bugs Prioritários</span>
+**Bugs Prioritários**
 
 Os dois bugs que deveriam ser corrigidos primeiro são:
 
