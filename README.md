@@ -4,35 +4,43 @@ Microssistema de Autenticação – 4blue
 
 📌 Objetivo
 
-Realizar uma análise exploratória do microssistema disponibilizado, identificando problemas relacionados a:
+Realizar uma análise exploratória do microssistema disponibilizado, identificando possíveis problemas relacionados a:
 
-Funcionalidade
+funcionalidade
 
-Experiência do usuário
+experiência do usuário
 
-Validação de dados
+validação de dados
 
-Segurança básica
+segurança básica
 
-Consistência da interface
+consistência da interface
 
 🔎 Estratégia de Teste
 
-Foi aplicada a técnica de teste exploratório manual, focando principalmente nos seguintes fluxos:
+Foi aplicada a técnica de teste exploratório manual, focando principalmente nos seguintes fluxos do sistema:
 
-Cadastro de usuário
+cadastro de usuário
 
-Login
+login
 
-Validação de formulário
+validação de formulário
 
-Comportamento da interface
+comportamento da interface
 
-Validação de dados de entrada
+validação de dados de entrada
 
-Segurança básica de autenticação
+segurança básica de autenticação
 
-Durante a análise foram utilizados cenários de uso comuns e também entradas inválidas ou inesperadas para identificar possíveis falhas.
+Durante os testes foram utilizados cenários de uso comuns e também entradas inválidas ou inesperadas, buscando identificar possíveis falhas no sistema.
+
+🖥 Ambiente de Teste
+
+Os testes foram realizados no seguinte ambiente:
+
+Sistema Operacional: Windows 10
+Navegador: Google Chrome
+Tipo de teste: Teste manual exploratório
 
 🛠 Ferramentas Utilizadas
 
@@ -40,8 +48,17 @@ Google Chrome
 
 Chrome DevTools
 
-Teste exploratório manual
+Teste manual exploratório
 
+📊 Resumo dos Bugs
+ID	Bug	Severidade	Prioridade
+1	Quebra de layout no campo telefone	Baixa	Baixa
+2	Erro inesperado após login	Média	Média
+3	Falha na validação do formulário	Crítica	Alta
+4	Cadastro com e-mail duplicado	Alta	Alta
+5	Campo nome aceita caracteres inválidos	Média	Média
+6	Campo telefone aceita letras	Média	Média
+7	Senha visível na requisição	Alta	Alta
 🐞 Bugs Identificados
 Bug 1 – Quebra de layout no campo de telefone
 
@@ -147,6 +164,22 @@ mínimo de 8 caracteres
 
 pelo menos 1 caractere especial
 
+Cenário 3 – Login com senha inválida
+
+Passos
+
+Criar conta com senha inválida
+
+Realizar login
+
+Resultado atual
+
+Login realizado normalmente.
+
+Resultado esperado
+
+Sistema deveria bloquear autenticação com credenciais inválidas.
+
 Severidade: Crítica
 Prioridade: Alta
 
@@ -243,11 +276,11 @@ Ir na aba Network
 
 Realizar login
 
-Inspecionar a requisição
+Inspecionar a requisição enviada
 
 Resultado atual
 
-A senha aparece diretamente na requisição enviada.
+A senha aparece diretamente na requisição.
 
 Resultado esperado
 
@@ -280,16 +313,16 @@ pode gerar inconsistências no sistema
 
 💡 Sugestões de melhoria
 
-Implementar validação de campos obrigatórios
+implementar validação de campos obrigatórios
 
-Implementar validação robusta de senha
+implementar validação robusta de senha
 
-Validar e-mail corretamente
+validar e-mail corretamente
 
-Validar formato de telefone
+validar formato de telefone
 
-Implementar validação tanto no frontend quanto no backend
+implementar validação tanto no frontend quanto no backend
 
-Melhorar feedback de erro ao usuário
+melhorar feedback de erro ao usuário
 
-Ajustar responsividade do layout
+ajustar responsividade do layout
