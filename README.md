@@ -20,6 +20,7 @@ consistência da interface
 
 <br>
 <br>
+
 **🔎 Estratégia de Teste**
 
 Foi aplicada a técnica de teste exploratório manual, focando principalmente nos seguintes fluxos do sistema:
