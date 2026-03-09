@@ -38,6 +38,7 @@ validação de dados de entrada
 segurança básica de autenticação
 
 Durante os testes foram utilizados cenários de uso comuns e também entradas inválidas ou inesperadas, buscando identificar possíveis falhas no sistema.
+
 <br>
 <br>
 
@@ -61,8 +62,10 @@ Teste manual exploratório
 <br>
 
 **🐞 Bugs Identificados**
+
 <br>
 <br>
+
 **Bug 1 – Quebra de layout no campo de telefone e confirmar senha**
 
 **Descrição**
@@ -85,8 +88,10 @@ O campo deve respeitar os limites do container e manter o alinhamento com os dem
 
 Severidade: Baixa
 Prioridade: Baixa
+
 <br>
 <br>
+
 **Bug 2 – Mensagem de erro inesperada após login**
 
 **Descrição**
@@ -111,8 +116,10 @@ Nenhuma mensagem de erro deveria aparecer após autenticação válida.
 
 Severidade: Média
 Prioridade: Média
+
 <br>
 <br>
+
 **Bug 3 – Falha na validação de formulário**
 
 **Descrição**
@@ -187,8 +194,10 @@ Sistema deveria bloquear autenticação com credenciais inválidas.
 
 Severidade: Crítica
 Prioridade: Alta
+
 <br>
 <br>
+
 **Bug 4 – Cadastro com e-mail duplicado**
 
 **Descrição**
@@ -211,8 +220,10 @@ O sistema deveria impedir duplicidade e informar que o e-mail já está cadastra
 
 Severidade: Alta
 Prioridade: Alta
+
 <br>
 <br>
+
 **Bug 5 – Campo nome aceita caracteres inválidos**
 
 **Descrição**
@@ -241,8 +252,10 @@ O campo deveria aceitar apenas letras e espaços.
 
 Severidade: Média
 Prioridade: Média
+
 <br>
 <br>
+
 **Bug 6 – Campo telefone aceita letras**
 
 **Descrição**
@@ -269,8 +282,10 @@ O campo deveria aceitar apenas números ou um formato válido de telefone.
 
 Severidade: Média
 Prioridade: Média
+
 <br>
 <br>
+
 **Bug 7 – Senha visível na requisição de login**
 
 Descrição
@@ -297,8 +312,10 @@ Dados sensíveis devem ser protegidos durante a comunicação.
 
 Severidade: Alta
 Prioridade: Alta
+
 <br>
 <br>
+
 **Bugs Prioritários**
 
 Os dois bugs que deveriam ser corrigidos primeiro são:
@@ -313,8 +330,10 @@ permite criação de contas inválidas
 compromete integridade dos dados
 
 quebra regras básicas de autenticação
+
 <br>
 <br>
+
 **2️⃣ Cadastro com e-mail duplicado (Bug 4)**
 
 **Motivos:**
@@ -322,8 +341,10 @@ quebra regras básicas de autenticação
 compromete identificação de usuários
 
 pode gerar inconsistências no sistema
+
 <br>
 <br>
+
 **💡 Sugestões de melhoria**
 
 implementar validação de campos obrigatórios
