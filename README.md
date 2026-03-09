@@ -262,7 +262,7 @@ Prioridade: Média
 
 O campo telefone aceita caracteres não numéricos.
 
-Passos para reproduzir
+**Passos para reproduzir**
 
 Inserir valores como:
 
@@ -292,7 +292,7 @@ Descrição
 
 Ao inspecionar a requisição de login através do DevTools, a senha pode ser visualizada diretamente na requisição.
 
-Passos para reproduzir
+**Passos para reproduzir**
 
 Abrir DevTools (F12)
 
